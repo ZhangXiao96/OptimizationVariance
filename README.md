@@ -31,3 +31,7 @@ see log_to_csv.py and plot_var_acc.py
 OV and ACC:
 ![](assets/example.png)
 
+## Contributing
+
+If you'd like to contribute, or have any suggestions for these guidelines, you can contact us at xiao_zhang@hust.edu.cn or open an issue on this GitHub repository.
+All contributions welcome! All content in this repository is licensed under the MIT license.
