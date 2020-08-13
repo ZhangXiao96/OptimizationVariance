@@ -148,7 +148,7 @@ for id_epoch in range(train_epoch):
     # recorder output var
     wrapper.eval()
     optimization_var = wrapper.get_optimization_var(var_loader)
-    writer.add_scalar("optimization var", train_var, id_epoch+1)
+    writer.add_scalar("optimization var", optimization_var, id_epoch+1)
 
     # eval
     wrapper.eval()

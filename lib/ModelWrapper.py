@@ -91,7 +91,7 @@ class ModelWrapper(object):
             self.optimizer.load_state_dict(original_optim)
 
         logits = np.array(logits)
-        ov = np.array([np.sum(np.var(logits[:, _, :], axis=0)) for _ in range(logits.shape[1])])
+        ov = np.array([np.mean(np.var(logits[:, _, :], axis=0)) for _ in range(logits.shape[1])])
         return np.mean(ov / np.mean(logits ** 2, axis=(0, -1), keepdims=False))
 
     def predict_on_batch(self, inputs):
