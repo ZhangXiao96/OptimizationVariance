@@ -69,6 +69,6 @@ if __name__ == '__main__':
     opt = 'adam'
     lr = 0.0001
     test_id = 0
-    runs_ = 'runs/noise_{}_opt_{}_lr_{}'.format(noise_split, opt, lr)
-    path = os.path.join(runs_, data_name, model_name, '{}'.format(test_id), 'log')
+    runs = 'runs/noise_{}_opt_{}_lr_{}'.format(noise_split, opt, lr)
+    path = os.path.join(runs, data_name, model_name, '{}'.format(test_id), 'log')
     event_to_csv(path)
